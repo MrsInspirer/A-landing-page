@@ -1,0 +1,53 @@
+*{
+  margin: auto;
+  padding: 0px;
+}
+
+main{
+  padding:0px;
+  width: 100%;
+}
+.top_parent{
+  background-color: magenta;
+  display:flex;
+flex-wrap: wrap;
+  height: 5em;
+  width:100%
+  
+}
+
+.top_child1{
+  background-color: cyan;
+  height: 3em;
+  width:5em
+  
+  
+}
+
+.top_grandchild{
+  background-color: white;
+  height: 3em;
+}
+
+.parent1{
+  background-color: cyan;
+  padding: 10%;
+  gap: 5%;
+width:50%
+}
+
+.parent2{
+  background-color: blue;
+  padding: 10%;
+  width:50%;
+} 
+
+.parent3{
+  background-color:lightgray;
+  padding: 10%;
+  width:50%;
+}
+
+.foot{
+  background-color: black;
+}
