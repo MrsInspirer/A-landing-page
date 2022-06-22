@@ -1,53 +1,122 @@
-*{
-  margin: auto;
-  padding: 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(12, 1, 1);
 }
 
-main{
-  padding:0px;
+.container {
+  background-color: rgb(142, 189, 230);
+  height: 100vh;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /*display:flex;
+  justify-content: center;
+  /*align-items: center;
+  position: relative;*/
+  background-image: image("bg-hero-desktop.svg");
 }
-.top_parent{
-  background-color: magenta;
-  display:flex;
-flex-wrap: wrap;
-  height: 5em;
-  width:100%
+.container-1 {
+  background-color: aliceblue;
+  width: 35%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 260px;
+}
+.container-2 {
+  background-color: rgb(123, 105, 156);
+  width: 35%;
+  height: 80%;
+  z-index: 0;
+  position: absolute;
+  top: 132px;
+  left: 270px;
+}
+.box1 {
+  background-color: aqua;
+  height: 6rem;
+  width: 80%;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box2 {
+  background-color: rgb(174, 235, 235);
+  height: 8rem;
+  width: 80%;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.box3{
+  background-color: rgb(8, 8, 8);
+  z-index: 0;
+  position: absolute;
+  height: 10rem;
+  width: 100%;
+ 
+  bottom:  0%;
+  /*margin-left: auto;
+  margin-right: auto;*/
   
 }
-
-.top_child1{
-  background-color: cyan;
-  height: 3em;
-  width:5em
-  
-  
+.box4 {
+  background-color: rgb(100, 153, 31);
+  width: 50%;
+  height: 6rem;
+  border-radius: 8px;
+  right:-25%;
+  position:relative;
+  bottom: -22%;
+}
+.box5 {
+  background-color: rgb(106, 33, 109);
+  height: 12rem;
+}
+.box6 {
+  background-color: rgb(31, 17, 83);
+  height: 10rem;
+  margin-top: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+.box7 {
+  background-color: rgb(170, 180, 22);
+  height: 10rem;
+  margin-top: 6px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+.box8 {
+  background-color: rgb(202, 60, 35);
+  height: 8rem;
+  width:40%;
+  margin-left: 50%;
 }
 
-.top_grandchild{
-  background-color: white;
-  height: 3em;
-}
-
-.parent1{
-  background-color: cyan;
-  padding: 10%;
-  gap: 5%;
-width:50%
-}
-
-.parent2{
-  background-color: blue;
-  padding: 10%;
-  width:50%;
-} 
-
-.parent3{
-  background-color:lightgray;
-  padding: 10%;
-  width:50%;
-}
-
-.foot{
-  background-color: black;
+@media screen and (max-width: 375px) {
+  .ccontainer {
+    flex-direction: column;
+    background-color: blueviolet;
+    width: 100%;
+  }
+  .container-1 {
+    height: 25%;
+    width: 100vh;
+  }
+  .container-2 {
+    height: 25%;
+    width: 100%;
+  }
 }
